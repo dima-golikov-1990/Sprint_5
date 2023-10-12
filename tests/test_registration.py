@@ -35,18 +35,3 @@ class TestRegistration:
         WebDriverWait(driver, timeout=3).until(EC.visibility_of_element_located((By.XPATH, incorrectPasswordText)))
 
         assert driver.find_element(By.XPATH, incorrectPasswordText).text == "Некорректный пароль"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
