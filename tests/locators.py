@@ -22,4 +22,4 @@ class Locators:
     registrationPasswordField = "//label[text()='Пароль']/following-sibling::*" # Поле 'Пароль'
     registerButton = "//button[text()='Зарегистрироваться']" # Кнопка 'Зарегистрироваться'
     incorrectPasswordText = "//*[contains(text(), 'Некорректный')]" # Надпись 'Некорректный пароль'
-    constructorButton = "//a[contains(@href,'/')]"
+    constructorButton = "//a[contains(@href,'/')]" # Кнопка 'Конструктор'
