@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from datatest import emailForLogin, passwordForLogin
-from locators import *
+from locators import loginButton, emailField, passwordField, enterButton, profileButton, makeBurgerText, enterLink, registrationLink, recoverPasswordLink
 
 class TestLogin:
     def test_login_using_the_login_to_account_button(self, driver):
@@ -65,52 +65,3 @@ class TestLogin:
         WebDriverWait(driver, timeout=3).until(EC.visibility_of_element_located((By.XPATH, makeBurgerText)))
 
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
