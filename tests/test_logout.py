@@ -25,13 +25,3 @@ class TestLogout:
         WebDriverWait(driver, timeout=3).until(EC.visibility_of_element_located((By.XPATH, enterLink)))
 
         assert "login" in driver.current_url
-
-
-
-
-
-
-
-
-
-
